@@ -1,0 +1,119 @@
+
+/* src/pages/Shop.css */
+.shop {
+  padding: 2rem;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.no-products {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-family: var(--font-body);
+  color: var(--dark-gray);
+  padding: 3rem 1rem;
+}
+
+.shop-header {
+  margin-bottom: 1.5rem;
+}
+
+.shop-title {
+  font-size: clamp(1.5rem, 6vw, 2rem);
+  font-family: var(--font-title);
+  font-weight: 600;
+  margin-top: 0.7rem;
+  text-transform: uppercase;
+}
+
+.shop-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin: 0.5rem 0 1.25rem;
+}
+
+.filter-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 14px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.filter-button:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.filter-button:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.filter-button i {
+  color: var(--dark-gray);
+}
+
+.filter-text {
+  font-family: var(--font-body);
+  font-weight: 500;
+  color: var(--eerrie-black);
+}
+
+.sort-select {
+  min-height: 44px;
+  padding: 0 10px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  background: #fff;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: #555555;
+  cursor: pointer;
+  max-width: 60%;
+}
+
+.sort-select:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.clear-filter-wrapper {
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 599px) {
+  .shop {
+    padding: 12px;
+  }
+
+  .shop-controls {
+    gap: 8px;
+  }
+
+  .filter-button {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+
+  .sort-select {
+    flex: 1 1 100%;
+    max-width: none;
+    min-width: 0;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .shop {
+    padding: 1.5rem;
+  }
+}

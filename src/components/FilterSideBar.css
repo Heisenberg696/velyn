@@ -1,0 +1,83 @@
+
+.filterSiderbarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.filterSiderbarHeader h2 {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  color: var(--eerrie-black);
+}
+
+.filterSiderbarHeader .close-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: #f0f0f0;
+  color: var(--dark-gray);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.close-btn:hover {
+  background: #e0e0e0;
+}
+
+.filterSiderContent {
+  margin-top: 5rem;
+}
+
+.filterSection {
+  margin-bottom: 2.7rem;
+}
+
+.filterSection h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 1rem;
+  font-family: var(--font-title);
+}
+
+.filterSection label {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-size: 0.85rem;
+  color: #333;
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 0.6rem;
+}
+
+.price-input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.to-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.filterButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+
+@media (max-height: 600px) {
+  .filterModal {
+    padding: 1rem;
+  }
+}
